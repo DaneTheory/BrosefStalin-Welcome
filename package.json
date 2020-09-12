@@ -1,0 +1,30 @@
+{
+  "name": "@brosefstalin/welcome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "author" : {
+   "name": "Branden Dane",
+   "email": "Branden@DaneTheory.com",
+   "site": "https://DaneTheory.com"
+  },
+  "scripts": {
+    "build": "poi --prod",
+    "start": "cross-env NODE_ENV=production poi public/index.html --serve",
+    "dev": "cross-env NODE_ENV=development poi public/index.html --serve",
+    "watch": "poi --watch"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "poi": "^12.10.2"
+  },
+  "installConfig": {
+    "pnp": true
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-refresh": "^0.8.3"
+  }
+}
